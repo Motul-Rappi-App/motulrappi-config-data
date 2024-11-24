@@ -1,2 +1,5 @@
 server:
   port: ${port:8082}
+
+  profiles:
+    active: dev 

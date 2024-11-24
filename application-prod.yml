@@ -1,0 +1,20 @@
+spring:
+  profiles:
+      active: dev
+
+  datasource:
+    url: jdbc:postgresql://${RDS_HOSTNAME:localhost}:${RDS_PORT:5432}/MotulRappiDB
+    username: postgres
+    password: postgres
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+
+eureka:
+  client:
+    service-url:
+        defaultZone: http://localhost:8761/eureka
+  
+  instance:
+    instance-id: ${spring.application.name}:${server.port}

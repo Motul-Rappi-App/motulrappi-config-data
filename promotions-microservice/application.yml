@@ -1,5 +1,2 @@
 server:
-  port: ${port:8081}
-
-  profiles:
-    active: dev 
+  port: ${SERVER_PORT:8081}

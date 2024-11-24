@@ -1,5 +1,9 @@
 server:
-  port: ${port:8080}
+  port: ${SERVER_PORT:8080}
 
-  profiles:
-    active: dev 
+application:
+  security:
+    jwt:
+      expiration: ${JWT_EXPIRATION:86400000}
+      refresh-token:
+        expiration: ${JWT_REFRESH_EXPIRATION:604800000}

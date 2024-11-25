@@ -1,5 +1,12 @@
 server:
-  port: ${SERVER_PORT:8080}
+  port: ${PORT:${SERVER_PORT:0}}
+
+eureka:
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    instance:
+      instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
 
 application:
   security:

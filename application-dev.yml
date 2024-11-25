@@ -4,10 +4,6 @@ spring:
     username: ${DB_USERNAME:postgres}
     password: ${DB_PASSWORD:postgres}
 
-eureka:
-  instance:
-    instance-id: ${spring.application.name}:${server.port}
-
 logging:
   level:
     root: DEBUG

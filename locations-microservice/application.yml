@@ -4,4 +4,4 @@ server:
 eureka:
   client:
     instance:
-      instance-id: ${spring.application.name}:${server.port}
+      instance-id: locations-microservice:${server.port}

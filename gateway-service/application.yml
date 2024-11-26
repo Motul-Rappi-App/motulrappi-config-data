@@ -1,0 +1,42 @@
+server:
+  port: ${SERVER_PORT:8090}
+
+spring:
+  application:
+    name: gateway-service
+
+  cloud:
+    gateway:
+      routes:
+        - id: AUTHENTICATION-MICROSERVICE
+          uri: lb://AUTHENTICATION-MICROSERVICE/
+          predicates:
+            - Path=/auth/**
+        - id: LOCATIONS-MICROSERVICE
+          uri: lb://LOCATIONS-MICROSERVICE/
+          predicates:
+            - Path=/location/**
+        - id: PRODUCTS-MICROSERVICE
+          uri: lb://PRODUCTS-MICROSERVICE/
+          predicates:
+            - Path=/product/**
+        - id: PROMOTIONS-MICROSERVICE
+          uri: lb://PROMOTIONS-MICROSERVICE/
+          predicates:
+            - Path=/promotion/**
+        - id: RAPPICOURIERS-MICROSERVICE
+          uri: lb://RAPPICOURIERS-MICROSERVICE/
+          predicates:
+            - Path=/rappiCourier/**
+        - id: REGISTER-PROMOTIONS-MICROSERVICE
+          uri: lb://REGISTER-PROMOTIONS-MICROSERVICE/
+          predicates:
+            - Path=/registerPromotion/**
+
+eureka:
+  client:
+    service-url:
+      default-zone: http://localhost:8761/eureka
+
+  instance:
+    instance-id: ${spring.application.name}:${server.port}

@@ -1,10 +1,10 @@
-server:
-  port: ${SERVER_PORT:8083}
-
 spring:
   application:
     name: locations-microservice
-    
+
+server:
+  port: ${SERVER_PORT:8083}
+
 eureka:
   client:
     instance:

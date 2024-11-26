@@ -1,3 +1,7 @@
+spring:
+  application:
+    name: rappicouriers-microservice
+
 server:
   port: ${SERVER_PORT:8085}
 

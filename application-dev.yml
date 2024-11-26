@@ -4,6 +4,6 @@ spring:
     username: ${DB_USERNAME:postgres}
     password: ${DB_PASSWORD:postgres}
 
-logging:
-  level:
-    root: DEBUG
+# logging:
+#   level:
+#     root: DEBUG

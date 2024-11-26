@@ -1,2 +1,7 @@
 server:
   port: ${SERVER_PORT:8081}
+
+eureka:
+  client:
+    instance:
+      instance-id: ${spring.application.name}:${server.port}

@@ -33,18 +33,21 @@ spring:
             - Path=/promotion/**
           filters:
             - AuthFilter
+
         - id: RAPPICOURIERS-MICROSERVICE
           uri: lb://RAPPICOURIERS-MICROSERVICE/
           predicates:
             - Path=/rappiCourier/**
           filters:
             - AuthFilter
+
         - id: REGISTER-PROMOTIONS-MICROSERVICE
           uri: lb://REGISTER-PROMOTIONS-MICROSERVICE/
           predicates:
             - Path=/registerPromotion/**
           filters:
             - AuthFilter
+
 
 eureka:
   client:

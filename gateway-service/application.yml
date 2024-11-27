@@ -47,8 +47,14 @@ spring:
             - Path=/registerPromotion/**
           filters:
             - AuthFilter
-
-
+            -
+        - id: COMMERCE-MICROSERVICE
+          uri: lb://COMMERCE-MICROSERVICE/
+          predicates:
+            - Path=/commerce/**
+          filters:
+            - AuthFilter
+            
 eureka:
   client:
     fetch-registry: true

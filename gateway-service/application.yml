@@ -19,6 +19,8 @@ spring:
           uri: lb://LOCATIONS-MICROSERVICE/
           predicates:
             - Path=/location/**
+          filters:
+            - AuthFilter
         - id: PRODUCTS-MICROSERVICE
           uri: lb://PRODUCTS-MICROSERVICE/
           predicates:

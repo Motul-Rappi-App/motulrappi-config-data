@@ -1,9 +1,9 @@
 spring:
   application:
-    name: promotions-microservice
+    name: products-microservice
 
 server:
-  port: ${PORT:${SERVER_PORT:8081}}
+  port: ${PORT:${SERVER_PORT:8084}}
 
 eureka:
   client:

@@ -15,26 +15,26 @@ spring:
           uri: lb://AUTHENTICATION-MICROSERVICE/
           predicates:
             - Path=/auth/**
-        # - id: LOCATIONS-MICROSERVICE
-        #   uri: lb://LOCATIONS-MICROSERVICE/
-        #   predicates:
-        #     - Path=/location/**
-        # - id: PRODUCTS-MICROSERVICE
-        #   uri: lb://PRODUCTS-MICROSERVICE/
-        #   predicates:
-        #     - Path=/product/**
-        # - id: PROMOTIONS-MICROSERVICE
-        #   uri: lb://PROMOTIONS-MICROSERVICE/
-        #   predicates:
-        #     - Path=/promotion/**
-        # - id: RAPPICOURIERS-MICROSERVICE
-        #   uri: lb://RAPPICOURIERS-MICROSERVICE/
-        #   predicates:
-        #     - Path=/rappiCourier/**
-        # - id: REGISTER-PROMOTIONS-MICROSERVICE
-        #   uri: lb://REGISTER-PROMOTIONS-MICROSERVICE/
-        #   predicates:
-        #     - Path=/registerPromotion/**
+        - id: LOCATIONS-MICROSERVICE
+          uri: lb://LOCATIONS-MICROSERVICE/
+          predicates:
+            - Path=/location/**
+        - id: PRODUCTS-MICROSERVICE
+          uri: lb://PRODUCTS-MICROSERVICE/
+          predicates:
+            - Path=/product/**
+        - id: PROMOTIONS-MICROSERVICE
+          uri: lb://PROMOTIONS-MICROSERVICE/
+          predicates:
+            - Path=/promotion/**
+        - id: RAPPICOURIERS-MICROSERVICE
+          uri: lb://RAPPICOURIERS-MICROSERVICE/
+          predicates:
+            - Path=/rappiCourier/**
+        - id: REGISTER-PROMOTIONS-MICROSERVICE
+          uri: lb://REGISTER-PROMOTIONS-MICROSERVICE/
+          predicates:
+            - Path=/registerPromotion/**
 
 eureka:
   client:

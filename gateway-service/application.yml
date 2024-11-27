@@ -54,7 +54,14 @@ spring:
             - Path=/commerce/**
           filters:
             - AuthFilter
-            
+
+        - id: ADMIN-MICROSERVICE
+          uri: lb://ADMIN-MICROSERVICE/
+          predicates:
+            - Path=/admin/**
+          filters:
+            - AuthFilter
+
 eureka:
   client:
     fetch-registry: true

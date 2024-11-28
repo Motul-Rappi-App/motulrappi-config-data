@@ -47,7 +47,7 @@ spring:
             - Path=/registerPromotion/**
           filters:
             - AuthFilter
-            -
+
         - id: COMMERCE-MICROSERVICE
           uri: lb://COMMERCE-MICROSERVICE/
           predicates:
@@ -69,5 +69,5 @@ eureka:
     service-url:
       default-zone: http://eureka-service:8761/eureka
 
-  instance:
-    hostname: localhost
+#  instance:
+#    hostname: localhost

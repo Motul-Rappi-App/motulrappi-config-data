@@ -19,6 +19,18 @@ eureka:
     paths:
       - uri: "/location"
         method: "POST"
+      - uri: "/product"
+        method: "POST"
+      - uri: "/promotion"
+        method: "POST"
+      - uri: "/rappiCourier"
+        method: "POST"
+      - uri: "/registerPromotion"
+        method: "POST"
+      - uri: "/commerce"
+        method: "POST"
+      - uri: "/admin"
+        method: "POST"
 
 application: 
   security:

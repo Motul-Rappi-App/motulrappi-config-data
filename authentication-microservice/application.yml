@@ -14,8 +14,13 @@ eureka:
   
   instance:
     instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
+  
+  admin-paths:
+    paths:
+      - uri: "/location"
+        method: "POST"
 
-application:
+application: 
   security:
     jwt:
       expiration: ${JWT_EXPIRATION:86400000}

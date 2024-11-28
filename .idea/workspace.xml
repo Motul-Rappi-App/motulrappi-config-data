@@ -28,7 +28,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;feature/jurgen&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/jurgensanc/Desktop/backendfinal/motulrappi-config-data/admin-microservice&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/jurgensanc/Desktop/backendfinal/motulrappi-config-data&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -132,6 +132,8 @@
       <workItem from="1732590258632" duration="171000" />
       <workItem from="1732592454116" duration="5247000" />
       <workItem from="1732637943808" duration="17191000" />
+      <workItem from="1732814342095" duration="593000" />
+      <workItem from="1732821278669" duration="3268000" />
     </task>
     <servers />
   </component>

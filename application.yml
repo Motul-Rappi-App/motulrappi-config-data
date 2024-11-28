@@ -8,5 +8,5 @@ spring:
   jpa:
     database-platform: org.hibernate.dialect.PostgreSQLDialect
 
-profiles:
-  active: dev 
+  profiles:
+    active: dev

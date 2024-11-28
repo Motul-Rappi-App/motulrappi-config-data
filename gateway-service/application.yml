@@ -45,6 +45,18 @@ spring:
             - Path=/registerPromotion/**
           filters:
             - AuthFilter
+        - id: COMMERCE-MICROSERVICE
+          uri: lb://COMMERCE-MICROSERVICE/
+          predicates:
+            - Path=/commerce/**
+          filters:
+            - AuthFilter
+        - id: ADMIN-MICROSERVICE
+          uri: lb://ADMIN-MICROSERVICE/
+          predicates:
+            - Path=/admin/**
+          filters:
+            - AuthFilter
 
 eureka:
   client:

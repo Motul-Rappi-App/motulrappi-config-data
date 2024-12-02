@@ -6,6 +6,15 @@
   <component name="ChangeListManager">
     <list default="true" id="54ebd779-59a9-46ac-a548-150536b48b3e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-microservice/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/admin-microservice/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authentication-microservice/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/authentication-microservice/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commerce-microservice/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/commerce-microservice/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway-service/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/gateway-service/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/locations-microservice/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/locations-microservice/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/products-microservice/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/products-microservice/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/promotions-microservice/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/promotions-microservice/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rappicouriers-microservice/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/rappicouriers-microservice/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/register-promotions-microservice/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/register-promotions-microservice/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -133,7 +142,7 @@
       <workItem from="1732592454116" duration="5247000" />
       <workItem from="1732637943808" duration="17191000" />
       <workItem from="1732814342095" duration="593000" />
-      <workItem from="1732821278669" duration="5108000" />
+      <workItem from="1732821278669" duration="5937000" />
     </task>
     <servers />
   </component>

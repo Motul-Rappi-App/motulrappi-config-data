@@ -8,6 +8,10 @@ spring:
     gateway:
       discovery:
         locator:
+          fetch-registry: true
+          register-with-eureka: true
+          service-url:
+            default-zone: http://localhost:8761/eureka
           enabled: true
       routes:
         - id: AUTHENTICATION-MICROSERVICE

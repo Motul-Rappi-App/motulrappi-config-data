@@ -10,3 +10,9 @@ spring:
 
   profiles:
     active: dev
+eureka:
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      default-zone: http://eureka-service:8761/

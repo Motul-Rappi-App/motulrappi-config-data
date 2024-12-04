@@ -10,11 +10,11 @@ eureka:
     fetch-registry: true
     register-with-eureka: true
     service-url:
-      default-zone: http://localhost:8761/eureka
-  
+      default-zone: http://eureka-service:8761/eureka
+
   instance:
     instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
-  
+
   admin-paths:
     paths:
       # - uri: "/location"
@@ -32,7 +32,7 @@ eureka:
       - uri: "/admin"
         method: "POST"
 
-application: 
+application:
   security:
     jwt:
       expiration: ${JWT_EXPIRATION:86400000}

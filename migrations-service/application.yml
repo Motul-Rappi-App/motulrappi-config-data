@@ -4,12 +4,3 @@ server:
 spring:
   application:
     name: migrations-service
-
-  datasource:
-    url: jdbc:postgresql://${RDS_HOSTNAME:motulrappi_db}:${RDS_PORT:5432}/MotulRappiDB
-    username: ${DB_USERNAME:postgres}
-    password: ${DB_PASSWORD:postgres}
-    driver-class-name: org.postgresql.Driver
-
-  jpa:
-    database-platform: org.hibernate.dialect.PostgreSQLDialect

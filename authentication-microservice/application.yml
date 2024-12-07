@@ -28,8 +28,8 @@ eureka:
       method: "PUT|POST|GET|DELETE"
     - uri: "/commerce"
       method: "PUT|POST|GET|DELETE"
-    - uri: "/auth/admin"
-      method: "POST"
+    # - uri: "/auth/admin"
+    #   method: "POST"
     - uri: "/auth/commerce"
       method: "POST"
   
@@ -50,6 +50,8 @@ eureka:
       method: "POST"
   
   public-paths:
+    - uri: "/auth/admin"
+      method: "POST"
     - uri: "/rappiCourier"
       method: "POST"
     - uri: "/location"

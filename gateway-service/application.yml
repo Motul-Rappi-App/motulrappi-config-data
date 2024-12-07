@@ -19,32 +19,32 @@ spring:
           uri: lb://LOCATIONS-MICROSERVICE/
           predicates:
             - Path=/location/**
-          # filters:
-          #   - AuthFilter
+          filters:
+            - AuthFilter
         - id: PRODUCTS-MICROSERVICE
           uri: lb://PRODUCTS-MICROSERVICE/
           predicates:
             - Path=/product/**
-          # filters:
-          #   - AuthFilter
+          filters:
+            - AuthFilter
         - id: PROMOTIONS-MICROSERVICE
           uri: lb://PROMOTIONS-MICROSERVICE/
           predicates:
             - Path=/promotion/**
-          # filters:
-          #   - AuthFilter
+          filters:
+            - AuthFilter
         - id: RAPPICOURIERS-MICROSERVICE
           uri: lb://RAPPICOURIERS-MICROSERVICE/
           predicates:
             - Path=/rappiCourier/**
-          # filters:
-          #   - AuthFilter
+          filters:
+            - AuthFilter
         - id: REGISTER-PROMOTIONS-MICROSERVICE
           uri: lb://REGISTER-PROMOTIONS-MICROSERVICE/
           predicates:
             - Path=/registerPromotion/**
-          # filters:
-          #   - AuthFilter
+          filters:
+            - AuthFilter
         - id: COMMERCE-MICROSERVICE
           uri: lb://COMMERCE-MICROSERVICE/
           predicates:

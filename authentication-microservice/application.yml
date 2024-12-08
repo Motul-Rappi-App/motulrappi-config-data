@@ -28,9 +28,7 @@ eureka:
       method: "POST"
     - uri: "/commerce"
       method: "PUT|POST|GET|DELETE"
-    - uri: "/auth/admin"
-      method: "POST"
-    - uri: "/auth/commerce"
+    - uri: "/auth/**"
       method: "POST"
   
   # public-paths:

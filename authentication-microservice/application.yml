@@ -33,17 +33,17 @@ eureka:
     - uri: "/auth/commerce"
       method: "POST"
   
-  public-paths:
-    - uri: "/rappiCourier"
-      method: "POST"
-    - uri: "/location"
-      method: "GET"
-    - uri: "/auth/login"
-      method: "POST"
-    - uri: "/auth/validate"
-      method: "POST"
-    - uri: "/auth/validateWithRequest"
-      method: "POST"
+  # public-paths:
+  #   - uri: "/rappiCourier"
+  #     method: "POST"
+  #   - uri: "/location"
+  #     method: "GET"
+  #   - uri: "/auth/login"
+  #     method: "POST"
+  #   - uri: "/auth/validate"
+  #     method: "POST"
+  #   - uri: "/auth/validateWithRequest"
+  #     method: "POST"
 
 application: 
   security:

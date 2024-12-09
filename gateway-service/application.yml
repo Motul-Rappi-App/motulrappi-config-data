@@ -14,19 +14,19 @@ spring:
         - id: AUTHENTICATION-MICROSERVICE
           uri: lb://AUTHENTICATION-MICROSERVICE/
           predicates:
-            - name: Path=/auth/**
+            - Path=/auth/**
+          filters:
+            - name: AuthFilter
               args:
                 excludePaths: /auth/login,auth/validate,auth/validateWithRequest,/auth/forgot-password/**
-          filters:
-            - AuthFilter
         - id: LOCATIONS-MICROSERVICE
           uri: lb://LOCATIONS-MICROSERVICE/
           predicates:
-            - name: Path=/location/**
+            - Path=/location/**
+          filters:
+            - name: AuthFilter
               args:
                 excludePaths: /location/public
-          filters:
-            - AuthFilter
         - id: PRODUCTS-MICROSERVICE
           uri: lb://PRODUCTS-MICROSERVICE/
           predicates:

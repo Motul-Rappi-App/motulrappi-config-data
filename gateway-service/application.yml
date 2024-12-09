@@ -14,13 +14,17 @@ spring:
         - id: AUTHENTICATION-MICROSERVICE
           uri: lb://AUTHENTICATION-MICROSERVICE/
           predicates:
-            - Path=/auth/**
+            - name: Path=/auth/**
+              args:
+                excludePaths: /auth/login,auth/validate,auth/validateWithRequest,/auth/forgot-password/**
           filters:
             - AuthFilter
         - id: LOCATIONS-MICROSERVICE
           uri: lb://LOCATIONS-MICROSERVICE/
           predicates:
-            - Path=/location/**
+            - name: Path=/location/**
+              args:
+                excludePaths: /location/public
           filters:
             - AuthFilter
         - id: PRODUCTS-MICROSERVICE
@@ -40,7 +44,9 @@ spring:
           predicates:
             - Path=/rappiCourier/**
           filters:
-            - AuthFilter
+            - name: AuthFilter
+              args:
+                excludePaths: /rappiCourier/public
         - id: REGISTER-PROMOTIONS-MICROSERVICE
           uri: lb://REGISTER-PROMOTIONS-MICROSERVICE/
           predicates:

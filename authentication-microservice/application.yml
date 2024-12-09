@@ -16,6 +16,8 @@ eureka:
     instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
   
   admin-paths:
+    - uri: "/admin"
+      method: "PUT|POST|GET|DELETE"
     - uri: "/location"
       method: "PUT|POST|DELETE"
     - uri: "/product"
@@ -29,21 +31,21 @@ eureka:
     - uri: "/commerce"
       method: "PUT|POST|GET|DELETE"
     - uri: "/auth/admin"
-      method: "POST"
+      method: "PUT|POST|GET|DELETE"
     - uri: "/auth/commerce"
-      method: "POST"
+      method: "PUT|POST|GET|DELETE"
   
-  public-paths:
-    - uri: "/rappiCourier"
-      method: "POST"
-    - uri: "/location"
-      method: "GET"
-    - uri: "/auth/login"
-      method: "POST"
-    - uri: "/auth/validate"
-      method: "POST"
-    - uri: "/auth/validateWithRequest"
-      method: "POST"
+  # public-paths:
+  #   - uri: "/rappiCourier"
+  #     method: "POST"
+  #   - uri: "/location"
+  #     method: "GET"
+  #   - uri: "/auth/login"
+  #     method: "POST"
+  #   - uri: "/auth/validate"
+  #     method: "POST"
+  #   - uri: "/auth/validateWithRequest"
+  #     method: "POST"
 
 application: 
   security:

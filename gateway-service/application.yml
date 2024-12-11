@@ -18,7 +18,7 @@ spring:
           filters:
             - name: AuthFilter
               args:
-                excludePaths: /auth/login,/auth/validate,/auth/validateWithRequest,/auth/forgot-password/verify-mail/**
+                excludePaths: /auth/login,/auth/validate,/auth/validateWithRequest,/auth/forgotPassword/verifyMail/**
         - id: LOCATIONS-MICROSERVICE
           uri: lb://LOCATIONS-MICROSERVICE/
           predicates:

@@ -22,9 +22,9 @@ spring:
                   - /auth/login
                   - /auth/validate
                   - /auth/validateWithRequest
-                  - /auth/forgotpPassword/verifyMail/{email}
-                  - /auth/forgotpPassword/verifyOtp/{otp}/{email}
-                  - /auth/forgotpPassword/changePassword/{email}
+                  - /auth/forgotPassword/verifyMail/{email}
+                  - /auth/forgotPassword/verifyOtp/{otp}/{email}
+                  - /auth/forgotPassword/changePassword/{email}
         - id: LOCATIONS-MICROSERVICE
           uri: lb://LOCATIONS-MICROSERVICE/
           predicates:

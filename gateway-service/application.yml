@@ -22,7 +22,7 @@ spring:
                   - /auth/login
                   - /auth/validate
                   - /auth/validateWithRequest
-                  - /auth/forgotPassword/verifyMail/{email}
+                  - /auth/forgotPassword/verifyMail/**
                   - /auth/forgotPassword/verifyOtp/{otp}/{email}
                   - /auth/forgotPassword/changePassword/{email}
         - id: LOCATIONS-MICROSERVICE

@@ -9,13 +9,33 @@ eureka:
   client:
     fetch-registry: true
     register-with-eureka: true
-#    service-url:
-#      default-zone: http://localhost:8761/eureka
+    # service-url:
+    #   default-zone: http://localhost:8761/eureka
   
   instance:
     instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
-
-application:
+  
+  admin-paths:
+    - uri: "/admin"
+      method: "PUT|POST|GET|DELETE"
+    - uri: "/location"
+      method: "PUT|POST|DELETE"
+    - uri: "/product"
+      method: "PUT|POST|GET|DELETE"
+    - uri: "/promotion"
+      method: "PUT|POST|GET|DELETE"
+    - uri: "/rappiCourier"
+      method: "PUT|GET|DELETE"
+    - uri: "/registerPromotion"
+      method: "POST"
+    - uri: "/commerce"
+      method: "PUT|POST|GET|DELETE"
+    - uri: "/auth/admin"
+      method: "PUT|POST|GET|DELETE"
+    - uri: "/auth/commerce"
+      method: "PUT|POST|GET|DELETE"
+  
+application: 
   security:
     jwt:
       expiration: ${JWT_EXPIRATION:86400000}

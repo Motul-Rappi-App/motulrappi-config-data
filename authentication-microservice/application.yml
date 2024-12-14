@@ -17,7 +17,7 @@ eureka:
   
   admin-paths:
     - uri: "/admin"
-      method: "PUT|POST|GET|DELETE"
+      method: "GET|DELETE"
     - uri: "/location"
       method: "PUT|POST|DELETE"
     - uri: "/product"
@@ -29,11 +29,11 @@ eureka:
     - uri: "/registerPromotion"
       method: "POST"
     - uri: "/commerce"
-      method: "PUT|POST|GET|DELETE"
+      method: "GET|DELETE"
     - uri: "/auth/admin"
-      method: "PUT|POST|GET|DELETE"
+      method: "PUT|POST"
     - uri: "/auth/commerce"
-      method: "PUT|POST|GET|DELETE"
+      method: "PUT|POST"
   
 application: 
   security:

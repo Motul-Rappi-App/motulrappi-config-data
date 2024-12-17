@@ -15,36 +15,50 @@ spring:
           uri: lb://AUTHENTICATION-MICROSERVICE/
           predicates:
             - Path=/auth/**
+          filters:
+            - name: AuthFilter
+              args:
+                excludePaths: 
+                  - /auth/login
+                  - /auth/validate
+                  - /auth/validateWithRequest
+                  - /auth/forgotPassword/verifyMail/{email}
+                  - /auth/forgotPassword/verifyOtp/{otp}/{email}
+                  - /auth/forgotPassword/changePassword/{email}
         - id: LOCATIONS-MICROSERVICE
           uri: lb://LOCATIONS-MICROSERVICE/
           predicates:
             - Path=/location/**
-          # filters:
-          #   - AuthFilter
+          filters:
+            - name: AuthFilter
+              args:
+                excludePaths: /location/public
         - id: PRODUCTS-MICROSERVICE
           uri: lb://PRODUCTS-MICROSERVICE/
           predicates:
             - Path=/product/**
-          # filters:
-          #   - AuthFilter
+          filters:
+            - AuthFilter
         - id: PROMOTIONS-MICROSERVICE
           uri: lb://PROMOTIONS-MICROSERVICE/
           predicates:
             - Path=/promotion/**
-          # filters:
-          #   - AuthFilter
+          filters:
+            - AuthFilter
         - id: RAPPICOURIERS-MICROSERVICE
           uri: lb://RAPPICOURIERS-MICROSERVICE/
           predicates:
             - Path=/rappiCourier/**
-          # filters:
-          #   - AuthFilter
+          filters:
+            - name: AuthFilter
+              args:
+                excludePaths: /rappiCourier/public
         - id: REGISTER-PROMOTIONS-MICROSERVICE
           uri: lb://REGISTER-PROMOTIONS-MICROSERVICE/
           predicates:
             - Path=/registerPromotion/**
-          # filters:
-          #   - AuthFilter
+          filters:
+            - AuthFilter
         - id: COMMERCE-MICROSERVICE
           uri: lb://COMMERCE-MICROSERVICE/
           predicates:
@@ -62,8 +76,8 @@ eureka:
   client:
     fetch-registry: true
     register-with-eureka: true
-#    service-url:
-#      default-zone: http://localhost:8761/eureka
+    # service-url:
+    #   default-zone: http://localhost:8761/eureka
 
   instance:
     hostname: localhost

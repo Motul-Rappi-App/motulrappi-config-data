@@ -1,0 +1,62 @@
+# Maven build artifacts
+target/
+*.jar
+*.war
+*.ear
+
+# Gradle build artifacts
+build/
+.gradle/
+!gradle/wrapper/gradle-wrapper.jar
+
+# Logs
+logs/
+*.log
+spring.log
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
+*.swo
+~$*
+
+# OS-specific files
+*.DS_Store
+Thumbs.db
+Icon?
+
+# IDEs and text editors
+.idea/
+*.iml
+.vscode/
+*.code-workspace
+
+# Environment-specific files
+.env
+.env.*
+*.backup
+
+# Credentials and secrets
+*.key
+*.pem
+*.crt
+*.cert
+*.jks
+*.p12
+*.pfx
+secrets/
+certificates/
+
+# Git-specific files
+*.orig
+
+# Generated documentation
+docs/
+*.html
+*.pdf
+
+# Dependency caches
+.mvn/
+.m2/
+.gradle/

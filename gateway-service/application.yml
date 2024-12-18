@@ -52,7 +52,9 @@ spring:
           filters:
             - name: AuthFilter
               args:
-                excludePaths: /rappiCourier/public
+                excludePaths: 
+                  - /rappiCourier/public
+                  - /rappiCourier/motorcycle/public
         - id: REGISTER-PROMOTIONS-MICROSERVICE
           uri: lb://REGISTER-PROMOTIONS-MICROSERVICE/
           predicates:

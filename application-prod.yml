@@ -1,8 +1,8 @@
 spring:
   datasource:
     url: jdbc:postgresql://${RDS_HOSTNAME:motulrappi_db}:${RDS_PORT:5432}/MotulRappiDB
-    username: ${DB_USERNAME:postgres}
-    password: ${DB_PASSWORD:postgres}
+    username: ${DB_USERNAME}
+    password: ${DB_PASSWORD}
 
 logging:
   level:
